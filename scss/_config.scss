@@ -1,0 +1,9 @@
+$logo: "PT Sans", sans-serif;
+
+@mixin boxShadow {
+  box-shadow: 0 0 0.75rem #d8dadd;
+}
+
+@mixin easeOut {
+  transition: all 0.5s ease-out;
+}

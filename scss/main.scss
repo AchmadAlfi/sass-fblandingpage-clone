@@ -1,0 +1,136 @@
+@import "config";
+@import "utilities";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background: #f0f2f5;
+  height: 95.4vh;
+
+  .showcase,
+  hr,
+  .user-form {
+    width: 50%;
+  }
+
+  .showcase {
+    padding: 12rem 0;
+    margin-left: 2rem;
+    .logo {
+      font-family: $logo;
+      font-size: 4rem;
+      color: rgb(0, 110, 255);
+    }
+
+    h2 {
+      font-weight: 100;
+      font-size: 1.75rem;
+    }
+  }
+
+  .user-form {
+    display: flex;
+    flex-direction: column;
+    padding: 8.3rem 0;
+
+    .card {
+      background: #fff;
+      width: 78%;
+      height: 45.7vh;
+      margin-left: 4.6rem;
+      margin-bottom: 1.8rem;
+      padding: 1rem 0.9rem;
+      border-radius: 2%;
+      border: 0;
+      @include boxShadow();
+
+      .login {
+        form {
+          div {
+            display: block;
+            margin-bottom: 0.7rem;
+            padding-left: 0.1rem;
+            input {
+              width: 100%;
+              display: inline-block;
+              padding: 1rem;
+              font-size: 1rem;
+              border: 1px solid #dddfe2;
+              border-radius: 6px;
+            }
+          }
+
+          .btn-primary {
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            background-color: #1877f2;
+            color: #fff;
+            border: 0;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-bottom: 1rem;
+          }
+
+          .forget-me {
+            font-size: 0.9rem;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+            margin: 4rem 9rem;
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        hr {
+          margin: 1rem 0;
+          width: 100%;
+          border-top: #dadde1;
+        }
+      }
+
+      .signup {
+        padding: 0 6rem;
+        .btn-success {
+          margin-top: 1rem;
+          background: #42b72a;
+          color: #fff;
+          padding: 0.8rem 0.9rem;
+          font-weight: bold;
+          font-size: 1.1rem;
+          border: 1px solid #42b72a;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background: darken(#42b72a, 5%);
+            @include easeOut();
+          }
+        }
+      }
+    }
+
+    .page {
+      margin-left: 5.5rem;
+      padding-left: 0.9rem;
+      p {
+        font-size: 0.9rem;
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
