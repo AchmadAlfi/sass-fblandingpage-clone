@@ -103,7 +103,7 @@ header {
         }
 
         .signup {
-          padding: 0 6rem;
+          padding: inherit;
           .btn-success {
             margin-top: 1rem;
             background: #42b72a;
@@ -114,6 +114,9 @@ header {
             border: 1px solid #42b72a;
             border-radius: 5px;
             cursor: pointer;
+            width: inherit;
+            display: block;
+            margin: auto;
 
             &:hover {
               background: darken(#42b72a, 5%);
@@ -151,6 +154,7 @@ footer {
       width: 100%;
       display: flex;
       margin-top: 2rem;
+      flex-wrap: wrap;
 
       &-content {
         margin-right: 0.8rem;
@@ -181,6 +185,10 @@ footer {
 
           i {
             color: #69707f;
+          }
+
+          &:hover {
+            background: darken(#f5f6f7, 5%);
           }
         }
       }
@@ -215,3 +223,4 @@ footer {
     }
   }
 }
+@import "mobile";

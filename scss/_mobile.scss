@@ -1,0 +1,150 @@
+// * Widescreens
+@include mediaXl {
+}
+
+// * Desktops & Laptops
+@include mediaLg {
+  header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .showcase {
+        margin-left: 0;
+        padding: 3rem;
+        .logo {
+          text-align: center;
+        }
+        h2 {
+          display: none;
+        }
+      }
+
+      .user-form {
+        padding: 3rem 0;
+
+        .card {
+          width: 100%;
+          margin-left: 0;
+
+          .login {
+            form {
+              .forget-me {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+                align-items: center;
+              }
+            }
+          }
+        }
+
+        .page {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+// * Tablets & Small Laptops
+@include mediaMd {
+  header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .showcase {
+        margin-left: 0;
+        padding: 3rem;
+        .logo {
+          text-align: center;
+        }
+        h2 {
+          display: none;
+        }
+      }
+
+      .user-form {
+        padding: 3rem 0;
+
+        .card {
+          width: 100%;
+          margin-left: 0;
+
+          .login {
+            form {
+              .forget-me {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+                align-items: center;
+              }
+            }
+          }
+
+          .signup {
+            padding: 0 4rem;
+          }
+        }
+
+        .page {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+// * Smartphones
+@include mediaSm {
+  .container {
+    padding: 0 20px;
+  }
+  header {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .showcase {
+        margin-left: 0;
+        padding: 0;
+        .logo {
+          text-align: center;
+        }
+        h2 {
+          display: none;
+        }
+      }
+
+      .user-form {
+        padding: 3rem 0;
+        width: 100%;
+
+        .card {
+          width: 100%;
+          margin-left: 0;
+
+          .login {
+            form {
+              .forget-me {
+                display: inline-block;
+                text-align: center;
+                margin: auto;
+                align-items: center;
+              }
+            }
+          }
+
+          .signup {
+            padding: 0 4rem;
+          }
+        }
+
+        .page {
+          margin: auto;
+        }
+      }
+    }
+  }
+}
